@@ -1,19 +1,32 @@
-# eghibli
+# EGhibli
+EGhibli是一个简单的在线展示Ghibli相关资讯平台Demo，项目采用Spring Boot + Vue开发
 
-## Project setup
-```
-npm install
-```
+## 技术栈
+### 前端技术栈
+- Vue
+- Bootstrap
+- vue-router
+- vue-lazyload
 
-### Compiles and hot-reloads for development
-```
-npm run serve
-```
+### 后端技术栈
+- Maven
+- SpringBoot
+- MySQL
 
-### Compiles and minifies for production
-```
-npm run build
-```
+## 页面
+### 首页
+- 导航条
+- Banner
+- Ghibli动画
+- Ghibli音乐
+### Ghibli动画
+- 全部动画
+- 卡片
+### Ghibli音乐
+- 全部音乐
+- 播放
+### 搜索
+### 简介
+### 联系我们
 
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+## 更新记录
