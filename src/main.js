@@ -4,6 +4,10 @@ import router from './router'
 import store from './store'
 import axios from 'axios'
 import VueAxios from 'vue-axios'
+import 'bootstrap/dist/css/bootstrap.min.css'
+import 'jquery/dist/jquery.min.js'
+import 'popper.js/dist/popper.min.js'
+import 'bootstrap/dist/js/bootstrap.min.js'
 
 Vue.use(VueAxios, axios);
 

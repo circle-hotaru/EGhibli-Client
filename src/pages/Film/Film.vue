@@ -1,5 +1,5 @@
 <template>
-  <div id="anime">
+  <div id="film">
     <img src="../../../public/images/logo.png" />
     <div class="container">
       <div v-for="item in movie" class="card">
@@ -12,7 +12,7 @@
 
 <script>
 export default {
-  name: "Anime",
+  name: "Film",
   data() {
     return {
       movie: null
