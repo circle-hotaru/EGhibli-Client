@@ -17,7 +17,7 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/film" class="nav-link">
+          <router-link to="/films" class="nav-link">
             <i class="fas fa-film"></i> 电影
           </router-link>
         </li>

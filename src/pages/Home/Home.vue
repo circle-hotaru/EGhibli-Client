@@ -7,7 +7,7 @@
         <div class="text">你所想要的 都是我们所努力的</div>
       </div>
       <div class="mt-4">
-        <button class="btn btn-primary" @click="$router.push('/film')">立即开始探索</button>
+        <button class="btn btn-primary" @click="$router.push('/films')">立即开始探索</button>
       </div>
     </div>
   </div>
