@@ -2,7 +2,7 @@
   <div class="container-fluid">
     <div class="row">
       <div class="imgbox col-md-2" style="cursor: pointer">
-        <img src="../../public/images/test1.png" class="img-thumbnail" alt="Responsive image" />
+        <img :src="film.cover" class="img-thumbnail" alt="Responsive image" />
       </div>
       <div class="col-md-8" style="cursor: pointer">
         <div class="card-link link">
