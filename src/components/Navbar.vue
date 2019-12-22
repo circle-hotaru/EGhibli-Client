@@ -22,7 +22,7 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/people" class="nav-link">
+          <router-link to="/roles" class="nav-link">
             <i class="fas fa-grin-alt"></i> 人物
           </router-link>
         </li>

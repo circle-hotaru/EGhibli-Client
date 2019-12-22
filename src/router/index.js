@@ -2,7 +2,7 @@ import Vue from 'vue'
 import VueRouter from 'vue-router'
 import Home from '@/pages/Home/Home'
 import Films from '@/pages/Films/Films'
-import People from '@/pages/People/People'
+import Roles from '@/pages/Roles/Roles'
 import Search from '@/pages/Search/Search'
 import Link from '@/pages/Link/Link'
 import About from '@/pages/About/About'
@@ -21,9 +21,9 @@ const routes = [
     component: Films
   },
   {
-    path: '/people',
-    name: 'people',
-    component: People
+    path: '/roles',
+    name: 'roles',
+    component: Roles
   },
   {
     path: '/search',

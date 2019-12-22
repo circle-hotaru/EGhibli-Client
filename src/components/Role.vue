@@ -2,13 +2,12 @@
   <div class="container-fluid">
     <div class="row">
       <div class="imgbox col-md-2" style="cursor: pointer">
-        <img :src="film.cover" class="img-thumbnail" alt="Responsive image" />
+        <img :src="role.photo" class="img-thumbnail" alt="Responsive image" />
       </div>
       <div class="col-md-8" style="cursor: pointer">
         <div class="card-link link">
-          <div class="title mt-3 mb-2">{{ film.title }}</div>
-          <div class="director mb-1">作者:{{ film.director }}</div>
-          <div class="description">简介:{{ film.description }}</div>
+          <div class="title mt-3 mb-2">{{ role.name }}</div>
+          <div class="description">简介:{{ role.description }}</div>
         </div>
       </div>
     </div>
@@ -17,9 +16,9 @@
 
 <script>
 export default {
-  name: "Film",
+  name: "Role",
   props: {
-    film: Object
+    role: Object
   }
 };
 </script>
@@ -37,14 +36,9 @@ export default {
   vertical-align: middle;
 }
 
-.title {
+.name {
   font-family: 黑体;
   font-size: 24px;
-}
-
-.director {
-  font-family: 仿宋;
-  font-size: 15px;
 }
 
 .description {
