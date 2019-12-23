@@ -4,7 +4,7 @@ import Home from '@/pages/Home/Home'
 import Films from '@/pages/Films/Films'
 import Roles from '@/pages/Roles/Roles'
 import Search from '@/pages/Search/Search'
-import Link from '@/pages/Link/Link'
+import Music from '@/pages/Music/Music'
 import About from '@/pages/About/About'
 
 Vue.use(VueRouter)
@@ -31,9 +31,9 @@ const routes = [
     component: Search
   },
   {
-    path: '/link',
-    name: 'link',
-    component: Link
+    path: '/music',
+    name: 'music',
+    component: Music
   },
   {
     path: '/about',

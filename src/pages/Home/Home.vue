@@ -7,7 +7,7 @@
         <div class="text">你所想要的 都是我们所努力的</div>
       </div>
       <div class="mt-4">
-        <button class="btn btn-primary" @click="$router.push('/films')">立即开始探索</button>
+        <button class="btn btn-success" @click="$router.push('/films')">立即开始探索</button>
       </div>
     </div>
   </div>
@@ -15,12 +15,7 @@
 
 <script>
 export default {
-  name: "Home",
-  data() {
-    return {
-      imgUrl: "../../../public/images/home.jpg"
-    };
-  }
+  name: "Home"
 };
 </script>
 
@@ -41,7 +36,6 @@ export default {
   font-size: 20px;
   color: white;
 }
-
 .home {
   height: 600px;
   background: url("../../../public/images/home.jpg");

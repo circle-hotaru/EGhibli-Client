@@ -21,7 +21,6 @@ export default {
 #app {
   height: 100%;
 }
-
 ::-webkit-scrollbar {
   /*滚动条整体样式*/
   width: 8px; /*高宽分别对应横竖滚动条的尺寸*/

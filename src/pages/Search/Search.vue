@@ -1,10 +1,7 @@
 <template>
-  <div class="container-fluid">
-    <div class="mt-5">电影搜索</div>
-    <div class="row mt-5">
-      <div class="mt-2">
-        <i class="iconfont icon-sousuo col-md-9"></i>
-      </div>
+  <div class="container">
+    <div class="title mt-4">电影搜索</div>
+    <div class="row mt-4">
       <input
         placeholder="输入电影名或人物名来搜索"
         type="text"
@@ -12,7 +9,7 @@
         v-model.trim="keywords"
         @keyup.enter="search"
       />
-      <button class="btn btn-primary btn-block ml-2 col-md-1" @click="search">搜索</button>
+      <button class="btn btn-success ml-2 col-md-1" @click="search">搜索</button>
     </div>
     <div v-show="!init">
       <ul class="mt-5" v-show="searchFilm.length > 0">
@@ -89,4 +86,9 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  font-family: Calibri;
+  font: 72px bold;
+  color: #6ab446;
+}
 </style>

@@ -6,7 +6,7 @@
       </div>
       <div class="col-md-8" style="cursor: pointer">
         <div class="card-link link">
-          <div class="title mt-3 mb-2">{{ role.name }}</div>
+          <div class="name mt-3 mb-2">{{ role.name }}</div>
           <div class="description">简介:{{ role.description }}</div>
         </div>
       </div>

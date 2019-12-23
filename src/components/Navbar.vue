@@ -27,8 +27,8 @@
           </router-link>
         </li>
         <li class="nav-item">
-          <router-link to="/link" class="nav-link">
-            <i class="fas fa-link"></i> 友链
+          <router-link to="/music" class="nav-link">
+            <i class="fas fa-music"></i> 音乐
           </router-link>
         </li>
         <li class="nav-item">

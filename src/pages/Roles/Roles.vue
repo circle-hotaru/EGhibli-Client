@@ -1,6 +1,6 @@
 <template>
-  <div class="container-fluid">
-    <div class="mt-5">人物浏览</div>
+  <div class="container">
+    <div class="title mt-4">人物浏览</div>
     <ul class="mt-5">
       <li v-for="(role, index) in roles" :key="index" class="list-unstyled mb-5">
         <Role :role="role"></Role>
@@ -28,4 +28,9 @@ export default {
 </script>
 
 <style scoped>
+.title {
+  font-family: Calibri;
+  font: 72px bold;
+  color: #6ab446;
+}
 </style>
