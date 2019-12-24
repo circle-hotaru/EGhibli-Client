@@ -11,7 +11,7 @@ import '@fortawesome/fontawesome-free/css/all.css'
 import '@fortawesome/fontawesome-free/js/all.js'
 
 Vue.use(APlayer, {
-  defaultCover: 'https://github.com/u3u.png',
+  defaultCover: '/images/logo.png',
   productionTip: true,
 });
 

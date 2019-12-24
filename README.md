@@ -10,6 +10,11 @@ EGhibli是一个简单的在线展示Ghibli相关资讯平台Demo，项目采用
 - Bootstrap
 - Jquery
 
+## 快速开始
+1. 克隆项目到本地(欢迎star)
+2. 安装依赖npm install
+3. 启动项目npm run serve
+
 ## 页面
 - 首页
 - 电影
