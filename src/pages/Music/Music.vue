@@ -13,27 +13,27 @@ export default {
         {
           name: "風になる",
           artist: "つじあやの",
-          url: "/music/風になる.mp3"
+          url: "http://circlehotarux.me/風になる.mp3"
         },
         {
           name: "君をのせて",
           artist: "井上あずみ",
-          url: "/music/君をのせて.mp3"
+          url: "http://circlehotarux.me/君をのせて.mp3"
         },
         {
           name: "Kiki's Delivery Service",
           artist: "久石让",
-          url: "/music/Kiki's Delivery Service.mp3"
+          url: "http://circlehotarux.me/Kiki's Delivery Service.mp3"
         },
         {
           name: "One Summer's Day",
           artist: "久石让",
-          url: "/music/One Summer's Day.mp3"
+          url: "http://circlehotarux.me/One Summer's Day.mp3"
         },
         {
           name: "もののけ姫",
           artist: "米良美一",
-          url: "/music/もののけ姫.mp3"
+          url: "http://circlehotarux.me/もののけ姫.mp3"
         }
       ]
     };
