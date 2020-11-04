@@ -1,29 +1,38 @@
 <template>
   <div class="container">
-    <div class="title mt-4">电影浏览</div>
+    <div class="title mt-5">电影浏览</div>
     <ul class="mt-5">
-      <li v-for="(film, index) in films" :key="index" class="list-unstyled mb-5">
-        <Film :film="film"></Film>
+      <li
+        v-for="(film, index) in films"
+        :key="index"
+        class="list-unstyled mb-5"
+      >
+        <el-card shadow="hover">
+          <Film :film="film" :index="index"></Film>
+        </el-card>
       </li>
     </ul>
   </div>
 </template>
 
 <script>
-import { mapState } from "vuex";
 import Film from "../../components/Film";
+import { mapState } from "vuex";
 
 export default {
   name: "Films",
-  computed: {
-    ...mapState(["films"])
-  },
   mounted() {
-    this.$store.state.films;
+    this.$store.dispatch("Films/getAllFilm");
   },
+  computed: {
+    ...mapState({
+      films: (state) => state.Films.films,
+    }),
+  },
+
   components: {
-    Film
-  }
+    Film,
+  },
 };
 </script>
 

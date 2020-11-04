@@ -1,28 +1,25 @@
 # EGhibli
-EGhibli是一个简单的在线展示Ghibli相关资讯平台Demo，项目采用Vue Cli开发
 
-## 技术栈
-### 前端技术栈
+Front-end for EGhibli.
+EGhibli is a simple online Ghibli information platform.
+
+## Demo
+
+View the application at [EGhibli](http://eghibli.mightyherox.me/).
+
+## Tech Stack
+
 - Vue
 - Vue Router
 - Vuex
-- vue-aplayer
+- Vue-lazyload
 - Bootstrap
-- Jquery
+- ElementUI
 
-## 快速开始
-1. 克隆项目到本地(欢迎star)
-2. 安装依赖npm install
-3. 启动项目npm run serve
+## Installation & Usage
 
-## 页面
-- 首页
-- 电影
-- 人物
-- 搜索
-- 音乐
-- 关于
+1. `git clone https://github.com/circle-hotaru/EGhibli.git`
+2. `npm install`
+3. `npm run serve`
 
-## 更新记录
-### 2019-12-23
-因为时间原因，原本计划的前后端项目改为纯前端项目。页面比较简陋，等寒假再更新吧。
+After the application starts visit http://localhost:8080 to view it in the browser.

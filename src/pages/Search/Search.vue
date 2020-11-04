@@ -1,30 +1,49 @@
 <template>
   <div class="container">
-    <div class="title mt-4">电影搜索</div>
-    <div class="row mt-4">
+    <div class="title mt-5">电影搜索</div>
+    <div class="row mt-5">
       <input
         placeholder="输入电影名或人物名来搜索"
         type="text"
         class="form-control col-md-10"
-        v-model.trim="keywords"
+        v-model.trim="filter"
         @keyup.enter="search"
       />
-      <button class="btn btn-success ml-2 col-md-1" @click="search">搜索</button>
+      <button class="btn btn-success btn-block ml-2 col-md-1" @click="search">
+        搜索
+      </button>
     </div>
     <div v-show="!init">
-      <ul class="mt-5" v-show="searchFilm.length > 0">
-        <li v-for="(film, index) in searchFilm" :key="index" class="list-unstyled mb-5">
-          <Film :film="film"></Film>
+      <ul class="mt-5" v-show="films.length > 0">
+        <li
+          v-for="(film, index) in films"
+          :key="index"
+          class="list-unstyled mb-5"
+        >
+          <el-card shadow="hover">
+            <Film :film="film" :index="index"></Film>
+          </el-card>
         </li>
       </ul>
-      <ul class="mt-5" v-show="searchRole.length > 0">
-        <li v-for="(role, index) in searchRole" :key="index" class="list-unstyled mb-5">
-          <Role :role="role"></Role>
+      <ul class="mt-5" v-show="roles.length > 0">
+        <li
+          v-for="(role, index) in roles"
+          :key="index"
+          class="list-unstyled mb-5"
+        >
+          <el-card shadow="hover">
+            <Role :role="role" :index="index"></Role>
+          </el-card>
         </li>
       </ul>
-      <div v-show="searchRole.length === 0" class="container mt-5">
+      <div
+        v-show="films.length === 0 && roles.length === 0"
+        class="container mt-5"
+      >
         <div class="row">
-          <div style="font-family: 等线" v-show="!init">暂时没有您要搜索的电影或人物~</div>
+          <div style="font-family: 等线" v-show="!init">
+            暂时没有您要搜索的电影或人物~
+          </div>
         </div>
       </div>
     </div>
@@ -39,49 +58,34 @@ import Role from "../../components/Role";
 export default {
   name: "Search",
   mounted() {
-    this.$store.state.films;
-    this.$store.state.roles;
+    this.filter = "";
+    this.$store.dispatch("Films/searchFilm", this.filter);
+    this.$store.dispatch("Roles/searchRole", this.filter);
+    this.init = true;
   },
   data() {
     return {
       init: true,
-      keywords: ""
+      filter: "",
     };
   },
   components: {
     Film,
-    Role
+    Role,
   },
   computed: {
-    ...mapState(["films", "roles"]),
-    searchFilm() {
-      if (this.keywords) {
-        return this.films.filter(film => {
-          let content = film.title;
-          let keyword = this.keywords;
-          return content.indexOf(keyword) != -1;
-        });
-      } else {
-        return this.films;
-      }
-    },
-    searchRole() {
-      if (this.keywords) {
-        return this.roles.filter(role => {
-          let content = role.name;
-          let keyword = this.keywords;
-          return content.indexOf(keyword) != -1;
-        });
-      } else {
-        return this.roles;
-      }
-    }
+    ...mapState({
+      films: (state) => state.Films.filteredFilms,
+      roles: (state) => state.Roles.filteredRoles,
+    }),
   },
   methods: {
     search() {
+      this.$store.dispatch("Films/searchFilm", this.filter);
+      this.$store.dispatch("Roles/searchRole", this.filter);
       this.init = false;
-    }
-  }
+    },
+  },
 };
 </script>
 

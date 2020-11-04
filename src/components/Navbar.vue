@@ -26,11 +26,7 @@
             <i class="fas fa-grin-alt"></i> 人物
           </router-link>
         </li>
-        <li class="nav-item">
-          <router-link to="/music" class="nav-link">
-            <i class="fas fa-music"></i> 音乐
-          </router-link>
-        </li>
+
         <li class="nav-item">
           <router-link to="/about" class="nav-link">
             <i class="fas fa-heart"></i> 关于

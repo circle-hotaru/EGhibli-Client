@@ -1,10 +1,10 @@
 import Vue from 'vue'
 import VueRouter from 'vue-router'
+
 import Home from '@/pages/Home/Home'
 import Films from '@/pages/Films/Films'
 import Roles from '@/pages/Roles/Roles'
 import Search from '@/pages/Search/Search'
-import Music from '@/pages/Music/Music'
 import About from '@/pages/About/About'
 
 Vue.use(VueRouter)
@@ -29,11 +29,6 @@ const routes = [
     path: '/search',
     name: 'search',
     component: Search
-  },
-  {
-    path: '/music',
-    name: 'music',
-    component: Music
   },
   {
     path: '/about',
